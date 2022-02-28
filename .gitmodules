@@ -1,3 +1,4 @@
 [submodule "nz-covid19-data"]
 	path = nz-covid19-data
 	url = https://github.com/Staz/nz-covid19-data.git
+	branch = main
