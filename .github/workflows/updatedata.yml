@@ -1,11 +1,12 @@
 # This workflow updates the `nz-covid19-data` submodule to the latest commit
-
+name: 'Update nz-covid19-data'
 on:
   # Allows you to run this workflow manually from the Actions tab or through HTTP API
   workflow_dispatch:
+  repository_dispatch:
 
 jobs:
-  sync:
+  updatedata:
     name: 'Update nz-covid19-data'
     runs-on: ubuntu-latest
 
