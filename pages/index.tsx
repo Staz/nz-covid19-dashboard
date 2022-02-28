@@ -1,5 +1,5 @@
-import { GetStaticProps, GetStaticPropsResult } from 'next'
-import { getSingleStats, SingleStats } from '../processing/stats.ts'
+import { GetStaticPropsResult } from 'next'
+import { getSingleStats, SingleStats } from '../processing/stats'
 
 export default function Home({ stats }: { stats: SingleStats }) {
   console.log(stats)
@@ -22,7 +22,7 @@ export default function Home({ stats }: { stats: SingleStats }) {
 }
 
 export function getStaticProps(): GetStaticPropsResult<{ stats: SingleStats }> {
-  console.log(getSingleStats)
+  console.log('bong', getSingleStats)
   return {
     props: {
       stats: getSingleStats(),
