@@ -4,6 +4,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab or through HTTP API
   workflow_dispatch:
   repository_dispatch:
+    types: [update-data]
 
 jobs:
   updatedata:
